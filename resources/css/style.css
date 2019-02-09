@@ -43,6 +43,10 @@ nav span {
   padding-right: 2rem;
 }
 
+.mobile-screen {
+  display:none;
+}
+
 .banner {
   background-image: url("../images/glasses-bg.png");
   height: 31rem;
@@ -163,4 +167,134 @@ nav span {
 .footer img {
   height: 1.5rem;
   margin-right:1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .container {
+    width: auto;
+  }
+
+  .banner {
+    background-size:cover;
+    padding-top:0rem;
+    height:22rem;
+  }
+
+  .banner h1{
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .additional-2 {
+    display:none;
+  }
+
+  .dummy {
+    justify-content: flex-end;
+  }
+
+}
+
+@media only screen and (max-width: 628px){
+
+  .large-screen {
+    display:none;
+  }
+
+  .mobile-screen {
+    display:block;
+  }
+
+  .banner {
+    height:17rem;
+    background-position: 20%;
+  }
+
+  .banner h1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 9rem;
+    text-align: center;
+    width:100%;
+    margin-right: 0;
+  }
+
+  .additional-1 {
+    display:none;
+  }
+
+  .container{
+    width:100%;
+  }
+
+  .features {
+    margin-top:3.77rem;
+    margin-bottom:2.23rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features section{
+    margin-right:0rem;
+    margin-top: 0rem;
+    margin-bottom:1.54rem;
+    font-size: 0.77rem;
+    font-family: Helvetica;
+    height: auto;
+  }
+
+  .features p{
+    margin-top:1rem;
+  }
+
+  .icon{
+    height:auto;
+  }
+
+  .description .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description section {
+    width:100%;
+    margin-right:0%;
+  }
+
+  .description .title {
+    width:100%;
+    text-align: center;
+    padding-left:0rem;
+  }
+
+  .description p{
+    font-size: 0.77rem;
+    font-family:Helvetica;
+    margin-bottom: 4rem;
+    padding-left:5px;
+  }
+
+  .footer .logo{
+    justify-content: center;
+  }
+
+  .footer{
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .footer img{
+    margin-right: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
 }
